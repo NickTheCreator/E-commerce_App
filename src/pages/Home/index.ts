@@ -1,2 +1,3 @@
-import HomePage from "./ui/HomePage";
+import { HomePageAsync as HomePage } from "./ui/HomePageLazy.async";
+
 export { HomePage };

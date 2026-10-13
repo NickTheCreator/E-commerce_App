@@ -1,2 +1,3 @@
 import AppRouter from "./router/ui/AppRouter";
-export { AppRouter };
+import ThemeProvider from "./theme/ThemeProvider";
+export { AppRouter, ThemeProvider };
