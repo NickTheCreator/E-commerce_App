@@ -1,3 +1,13 @@
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
+
 export default function LoginPage() {
-	return <h1>Login</h1>;
+	const { t } = useTranslation("login");
+
+	return (
+		<>
+			<h1>{t("login")}</h1>
+			<Link to={"/"}>Go back to home</Link>
+		</>
+	);
 }
