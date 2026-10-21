@@ -17,12 +17,7 @@ export default function HomePage() {
 	return (
 		<>
 			<h1 className={styles.title}>{t("hello")}</h1>
-			<Button
-				theme="outline"
-				onClick={toggleTheme}
-			>
-				Theme
-			</Button>
+			<Button onClick={toggleTheme}>Theme</Button>
 			<Button
 				theme="outline"
 				onClick={changeLanguage}

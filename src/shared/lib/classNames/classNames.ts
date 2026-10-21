@@ -12,5 +12,5 @@ export function classNames(...args: ClassValue[]): string {
 			}
 			return [];
 		})
-		.join("");
+		.join(" ");
 }
