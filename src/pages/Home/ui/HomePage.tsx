@@ -2,8 +2,9 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 
 import { useTheme } from "@/shared/config";
-import { Button } from "@/shared/ui";
+import { Button, Input } from "@/shared/ui";
 
+import SearchIcon from "@/shared/assets/icons/Search.svg?react";
 import styles from "./HomePage.module.scss";
 
 export default function HomePage() {
@@ -17,6 +18,10 @@ export default function HomePage() {
 	return (
 		<>
 			<h1 className={styles.title}>{t("hello")}</h1>
+			<Input
+				Icon={<SearchIcon />}
+				placeholder="Search..."
+			/>
 			<Button onClick={toggleTheme}>Theme</Button>
 			<Button
 				theme="outline"
