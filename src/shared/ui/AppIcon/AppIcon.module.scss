@@ -1,0 +1,17 @@
+.wrapped {
+	background-color: var(--primary-color-light);
+	padding: 6px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 100%;
+
+	&.icon {
+		fill: var(--primary-color);
+	}
+}
+.filled {
+	fill: var(--primary-color);
+}
