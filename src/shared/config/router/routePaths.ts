@@ -6,7 +6,7 @@ export const AppRoutes = {
 
 type AppRoutes = (typeof AppRoutes)[keyof typeof AppRoutes];
 
-export const routePath: Record<AppRoutes, string> = {
+export const routePaths: Record<AppRoutes, string> = {
 	[AppRoutes.HOME]: "/",
 	[AppRoutes.LOGIN]: "/login",
 	[AppRoutes.NOTFOUND]: "*",

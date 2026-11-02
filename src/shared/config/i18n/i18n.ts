@@ -7,7 +7,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // have a look at the Quick start guide
 // for passing in lng and translations on init
 
-export const supportedLngs = ["en", "pt"];
+export const supportedLngs = ["en", "pt"] as const;
 
 i18n
 	.use(Backend)
