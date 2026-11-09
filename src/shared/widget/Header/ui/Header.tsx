@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
+
 import { routePaths } from "@/shared/config";
 import { AppIcon, Button, Input } from "@/shared/ui";
 
@@ -14,6 +16,7 @@ import styles from "./Header.module.scss";
 
 export default function Header() {
 	const navigate = useNavigate();
+	const { t } = useTranslation();
 
 	const handleLoginClick = () => {
 		navigate(routePaths.login);
@@ -37,20 +40,18 @@ export default function Header() {
 							theme="background"
 						/>
 					}
-					placeholder={"Search by"}
+					placeholder={t("header.searchBy")}
 					rouded
 				/>
 			</div>
 			<div className={styles.section}>
-				<Button theme="secondary">
-					<span>Cart</span>
-				</Button>
+				<Button theme="secondary">{t("header.cart")}</Button>
 				<Button
 					onClick={handleLoginClick}
 					theme="outline"
 				>
 					<AppIcon Icon={UserIcon} />
-					<span>Login</span>
+					{t("header.login")}
 				</Button>
 
 				<ThemeSwitcher />
