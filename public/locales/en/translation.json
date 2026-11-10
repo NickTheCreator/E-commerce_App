@@ -30,5 +30,8 @@
 		"twitter": "Twitter",
 
 		"copyright": "All right reserved ©{{year}} {{company}}"
+	},
+	"pageLoader": {
+		"loading": "Loading..."
 	}
 }

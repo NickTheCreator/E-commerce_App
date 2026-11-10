@@ -1,5 +1,5 @@
-import type { FunctionComponent, SVGProps } from "react";
 import { cn } from "@/shared/lib";
+import type { FunctionComponent, SVGProps } from "react";
 
 import styles from "./AppIcon.module.scss";
 

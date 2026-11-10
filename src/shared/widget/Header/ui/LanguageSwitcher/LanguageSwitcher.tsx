@@ -1,6 +1,6 @@
-import { languageIconList, type SupportedLngsType } from "@/shared/config";
-import { AppIcon, Button } from "@/shared/ui";
 import { useTranslation } from "react-i18next";
+import { AppIcon, Button } from "@/shared/ui";
+import { languageIconList, type SupportedLngsType } from "@/shared/config";
 
 export default function LanguageSwitcher() {
 	const { i18n } = useTranslation();

@@ -1,5 +1,5 @@
-import type { FunctionComponent, SVGProps } from "react";
 import { supportedLngs } from "./i18n";
+import type { FunctionComponent, SVGProps } from "react";
 
 import EnglishFlagIcon from "@/shared/assets/icons/English.svg?react";
 import BrazilFlagIcon from "@/shared/assets/icons/Brazil.svg?react";
