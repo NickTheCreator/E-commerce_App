@@ -3,7 +3,7 @@ import { AppRouter } from "./providers";
 
 function App() {
 	return (
-		<Suspense fallback="Loading">
+		<Suspense fallback={<></>}>
 			<AppRouter />
 		</Suspense>
 	);

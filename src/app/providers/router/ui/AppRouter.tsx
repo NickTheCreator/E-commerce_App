@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
-import { routeConfig } from "../routerConfig";
 import { Suspense } from "react";
+import { routeConfig } from "../routerConfig";
+import { PageLoader } from "@/shared/widget/PageLoader";
 
 export default function AppRouter() {
 	return (
@@ -12,7 +13,7 @@ export default function AppRouter() {
 					element={
 						<Suspense
 							key={route.path}
-							fallback={<>loading...</>}
+							fallback={<PageLoader />}
 						>
 							{route.element}
 						</Suspense>
