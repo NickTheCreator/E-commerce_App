@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
+import { ErrorBoundary } from "react-error-boundary";
 import { ThemeProvider } from "./app/providers";
+import { PageError } from "./shared/widget/PageError";
 
 import App from "./app/App";
 
@@ -12,7 +14,9 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<BrowserRouter>
 			<ThemeProvider>
-				<App />
+				<ErrorBoundary fallback={<PageError />}>
+					<App />
+				</ErrorBoundary>
 			</ThemeProvider>
 		</BrowserRouter>
 	</StrictMode>,

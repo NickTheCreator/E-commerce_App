@@ -8,6 +8,7 @@ import styles from "./HomePage.module.scss";
 
 export default function HomePage() {
 	const { t } = useTranslation();
+
 	return (
 		<div className={styles.pageWrapper}>
 			<Header />

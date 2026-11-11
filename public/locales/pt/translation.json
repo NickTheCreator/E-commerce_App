@@ -33,5 +33,10 @@
 	},
 	"pageLoader": {
 		"loading": "Carregando..."
+	},
+	"pageError": {
+		"title": "Algo deu errado",
+		"desciption": "Desculpe - um erro inesperado aconteceu. Porfavor tente recarregar a pagina ou volte mais tarde.",
+		"reload": "Tente novamente"
 	}
 }
