@@ -36,7 +36,12 @@
 	},
 	"pageError": {
 		"title": "Algo deu errado",
-		"desciption": "Desculpe - um erro inesperado aconteceu. Porfavor tente recarregar a pagina ou volte mais tarde.",
+		"description": "Desculpe - ocorreu um erro inesperado. Tente atualizar a página ou volte mais tarde.",
 		"reload": "Tente novamente"
+	},
+	"pageNotFound": {
+		"title": "Página não encontrada",
+		"description": "A página que você está procurando não está disponível. Tente pesquisar novamente ou use o botão Voltar abaixo.",
+		"goBack": "Voltar"
 	}
 }

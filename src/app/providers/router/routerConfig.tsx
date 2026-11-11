@@ -16,7 +16,7 @@ export const routeConfig: RouteProps[] = [
 		element: <LoginPage />,
 	},
 	{
-		path: routePaths[AppRoutes.NOTFOUND],
+		path: routePaths[AppRoutes.NOT_FOUND],
 		element: <NotFoundPage />,
 	},
 ];

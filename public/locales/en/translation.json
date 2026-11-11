@@ -36,7 +36,12 @@
 	},
 	"pageError": {
 		"title": "Something went wrong",
-		"desciption": "Sorry - an unexpected error occurred. Please try refreshing the page or come back later.",
+		"description": "Sorry - an unexpected error occurred. Please try refreshing the page or come back later.",
 		"reload": "Try again"
+	},
+	"pageNotFound": {
+		"title": "Page Not Found",
+		"description": "The page you're looking for isn't avaliable. Try to search again or use the go back button below.",
+		"goBack": "Go Back"
 	}
 }

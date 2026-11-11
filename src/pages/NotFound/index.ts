@@ -1,3 +1,3 @@
-import { NotFoundPageLazy as NotFoundPage } from "./ui/NotFoundPageLazy.async";
+import NotFoundPage from "./ui/NotFoundPage";
 
 export { NotFoundPage };
