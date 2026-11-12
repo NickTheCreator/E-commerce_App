@@ -144,6 +144,9 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
+# Vitest reports and artifacts
+.vitest/
+
 # Astro generated types
 .astro/
 
