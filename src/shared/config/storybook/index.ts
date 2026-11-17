@@ -1,3 +1,5 @@
 import { ThemeDecorator } from "./decorators/ThemeDecorator";
+import { RouterDecorator } from "./decorators/RouterDecorator";
+import { LanguageDecorator } from "./decorators/LanguageDecorator";
 
-export { ThemeDecorator };
+export { ThemeDecorator, RouterDecorator, LanguageDecorator };

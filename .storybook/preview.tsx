@@ -1,8 +1,9 @@
 import type { Preview } from "@storybook/react-vite";
 
+import { LanguageDecorator, RouterDecorator, ThemeDecorator } from "../src/shared/config/storybook";
+
 // @ts-expect-error -- Vite handles this Sass side-effect import.
 import "../src/app/styles/index.scss";
-import { ThemeDecorator } from "../src/shared/config/storybook";
 
 const preview: Preview = {
 	globalTypes: {
@@ -18,6 +19,19 @@ const preview: Preview = {
 				dynamicTitle: true,
 			},
 			defaultValue: "blue-theme",
+		},
+		locale: {
+			name: "locale",
+			description: "App themlocalee",
+			toolbar: {
+				icon: "globe",
+				items: [
+					{ value: "en", title: "English" },
+					{ value: "pt", title: "Português" },
+				],
+				dynamicTitle: true,
+			},
+			defaultValue: "en",
 		},
 	},
 	parameters: {
@@ -35,7 +49,7 @@ const preview: Preview = {
 			test: "todo",
 		},
 	},
-	decorators: [ThemeDecorator],
+	decorators: [ThemeDecorator, RouterDecorator, LanguageDecorator],
 };
 
 export default preview;
