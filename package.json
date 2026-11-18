@@ -5,10 +5,13 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc -b && vite build",
+		"build": "vite build",
 		"lint": "oxlint",
+		"lint:ts": "tsc",
+		"lint:scss": "stylelint **/*.scss",
 		"preview": "vite preview",
 		"test:unit": "vitest",
+		"test:regression": "npx chromatic",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
@@ -24,6 +27,12 @@
 		"sass-embedded": "^1.105.1"
 	},
 	"devDependencies": {
+		"@chromatic-com/storybook": "latest",
+		"@storybook/addon-a11y": "^10.6.7",
+		"@storybook/addon-docs": "^10.6.7",
+		"@storybook/addon-onboarding": "^10.6.7",
+		"@storybook/addon-vitest": "^10.6.7",
+		"@storybook/react-vite": "^10.6.7",
 		"@testing-library/dom": "^10.4.2",
 		"@testing-library/jest-dom": "^7.0.1",
 		"@testing-library/react": "^16.3.3",
@@ -31,23 +40,17 @@
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
 		"@vitejs/plugin-react": "^6.1.1",
+		"@vitest/browser-playwright": "5.1.0",
+		"@vitest/coverage-v8": "5.1.0",
 		"jsdom": "^31.0.0",
 		"oxlint": "^1.81.0",
+		"playwright": "latest",
+		"storybook": "^10.6.7",
 		"stylelint": "^17.16.0",
 		"stylelint-config-standard-scss": "^17.0.0",
 		"typescript": "~6.0.2",
 		"vite": "^8.3.0",
 		"vite-plugin-svgr": "^5.2.0",
-		"vitest": "^5.1.0",
-		"storybook": "^10.6.7",
-		"@storybook/react-vite": "^10.6.7",
-		"@chromatic-com/storybook": "latest",
-		"@storybook/addon-vitest": "^10.6.7",
-		"@storybook/addon-a11y": "^10.6.7",
-		"@storybook/addon-docs": "^10.6.7",
-		"@storybook/addon-onboarding": "^10.6.7",
-		"@vitest/browser-playwright": "5.1.0",
-		"@vitest/coverage-v8": "5.1.0",
-		"playwright": "latest"
+		"vitest": "^5.1.0"
 	}
 }

@@ -5,7 +5,6 @@
 
 .container {
 	padding: 10px var(--container-padding);
-
 	display: flex;
 	align-items: flex-start;
 	gap: 140px;
@@ -27,14 +26,12 @@
 
 .columnTittle {
 	margin: 0 0 20px;
-
 	color: var(--gray-800);
 }
 
 .linkList {
 	margin: 0;
 	padding: 0;
-
 	list-style: none;
 
 	li {
@@ -49,8 +46,8 @@
 .link {
 	color: var(--gray-600);
 	font-size: 14px;
-
 	text-decoration: none;
+
 	&:hover {
 		color: var(--primary-color);
 	}
@@ -61,8 +58,6 @@
 .copyright {
 	font: var(--font-sm);
 	color: var(--gray-600);
-
 	text-align: center;
-
 	margin-top: 32px;
 }
