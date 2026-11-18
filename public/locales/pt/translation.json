@@ -1,0 +1,47 @@
+{
+	"header": {
+		"searchBy": "Buscar",
+		"cart": "Carrinho",
+		"login": "Login"
+	},
+	"footer": {
+		"about": "Sobre",
+		"aboutUs": "Sobre nós",
+		"ourBranches": "Nossas Filiais",
+		"changeLog": "Registro de Alterações",
+
+		"quickLinks": "Links Rápidos",
+		"faqs": "Perguntas Frequentes",
+		"recipes": "Receitas",
+		"contactUs": "Fale conosco",
+
+		"helpSupport": "Ajuda e Suporte",
+		"termOfService": "Termos de Serviçoes",
+		"privacyPolicy": "Politica de Privacidade",
+		"security": "Segurança",
+
+		"company": "Empresa",
+		"blog": "Blog",
+		"contact": "Contato",
+
+		"social": "Redes Sociais",
+		"facebook": "Facebook",
+		"instagram": "Instagram",
+		"twitter": "Twitter",
+
+		"copyright": "Todos os Direitos Reservados ©{{year}} {{company}}"
+	},
+	"pageLoader": {
+		"loading": "Carregando..."
+	},
+	"pageError": {
+		"title": "Algo deu errado",
+		"description": "Desculpe - ocorreu um erro inesperado. Tente atualizar a página ou volte mais tarde.",
+		"reload": "Tente novamente"
+	},
+	"pageNotFound": {
+		"title": "Página não encontrada",
+		"description": "A página que você está procurando não está disponível. Tente pesquisar novamente ou use o botão Voltar abaixo.",
+		"goBack": "Voltar"
+	}
+}

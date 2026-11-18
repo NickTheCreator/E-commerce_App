@@ -1,0 +1,11 @@
+@use "./global";
+@use "./reset";
+@use "./themes/blue";
+@use "./themes/pink";
+
+body {
+	min-height: 100vh;
+	background-color: var(--white);
+	font: var(--font-base);
+	color: var(--black);
+}

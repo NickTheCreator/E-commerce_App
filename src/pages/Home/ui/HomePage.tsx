@@ -1,3 +1,22 @@
+import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+
+import { Header } from "@/shared/widget/Header";
+import { Footer } from "@/shared/widget/Footer";
+
+import styles from "./HomePage.module.scss";
+
 export default function HomePage() {
-	return <>Home</>;
+	const { t } = useTranslation();
+
+	return (
+		<div className={styles.pageWrapper}>
+			<Header />
+			<main className={styles.content}>
+				<h1 className={styles.title}>{t("hello")}</h1>
+				<Link to={"/login"}>Login page</Link>
+			</main>
+			<Footer />
+		</div>
+	);
 }
