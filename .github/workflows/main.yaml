@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint oxlintrc
+        run: npm run lint
+
       - name: Lint TypeScript and SCSS
         run: |
           npm run lint:ts
