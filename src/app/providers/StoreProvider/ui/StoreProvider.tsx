@@ -1,5 +1,5 @@
 import { createStore, type StateSchema } from "@/app/store";
-import { Children, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Provider } from "react-redux";
 
 interface StoreProviderProps {
