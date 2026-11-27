@@ -1,10 +1,14 @@
 import { configureStore, type ThunkAction, type UnknownAction } from "@reduxjs/toolkit";
-import { type StateSchema } from "./StateSchema";
+import { userReducer } from "@/app/entities";
+
+import type { StateSchema } from "./StateSchema";
 
 export const createStore = (initialState?: StateSchema) => {
 	return configureStore({
 		preloadedState: initialState,
-		reducer: {},
+		reducer: {
+			user: userReducer,
+		},
 		middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 		devTools: true,
 	});
